@@ -22,6 +22,6 @@ bash thotloader.sh reddit_username1 reddit_username2 reddit_usernameN
 * Just download
 
 ```sh
-node thotloader.sh reddit_username
+node thotloader.js reddit_username
 ```
 
