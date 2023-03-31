@@ -1,0 +1,12 @@
+{
+  "name": "reddit-thotloader",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "follow-redirects": "1.14.6",
+    "node-html-parser": "5.2.0",
+    "sanitize-filename": "1.6.3"
+  }
+}
