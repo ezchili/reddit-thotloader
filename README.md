@@ -6,7 +6,7 @@ This uses a per-command cache to avoid downloading the same urls multiple times
 
 In the event that you still download the same files multiple times, a shell script is included to detect and remove them.
 
-Usage: 
+## Usage:
 
 * Shorthand shell script to remove duplicates:
 
@@ -25,3 +25,15 @@ bash thotloader.sh reddit_username1 reddit_username2 reddit_usernameN
 node thotloader.js reddit_username
 ```
 
+## Docker
+
+Using Docker to run this program:
+
+```sh
+docker build -t reddit-thotloader:latest .
+docker run -it \
+    -v $PWD:$PWD \
+    -u $(id -u):$(id -u) \
+    reddit-thotloader:latest \
+    bash -c "cd $PWD && node /usr/src/app/thotloader.js <reddit_username>"
+```
